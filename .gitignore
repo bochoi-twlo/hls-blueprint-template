@@ -102,3 +102,6 @@ dist
 # Twilio HLS specific
 .env.localhost
 .idea/
+
+# disable personal settings in vscode
+.vscode
