@@ -5,6 +5,9 @@ FROM twilio/twilio-cli:3.5.0
 
 RUN twilio plugins:install @twilio-labs/plugin-serverless
 
+ARG GITHUB_SHA_ARG
+ENV GITHUB_SHA=$GITHUB_SHA_ARG
+
 # build React app, if present
 #COPY app /app
 #WORKDIR /app
